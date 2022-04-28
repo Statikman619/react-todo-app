@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import AddTodo from "./components/AddTodo";
+import Todo from "./components/Todo";
+import { Link } from "@material-ui/core";
 
 function App() {
+  const [todos, setTodos] = useState([]);
+  const channelLink = {
+    float: "right",
+    fontWeight: "bold",
+    fontSize: 25,
+    fontFamily: "monospace",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Link
+        href="https://youtube.com/c/MaxProgramming"
+        target="_blank"
+        color="error"
+        style={channelLink}
+      >
+        Max Programming
+      </Link>
+      <AddTodo makeTodos={(text) => setTodos([...todos, text])} />
+      {todos.map((todo, index) => {
+        return <Todo todoNo={index} todo={todo} key={index} />;
+      })}
     </div>
   );
 }
