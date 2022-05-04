@@ -11,6 +11,32 @@ const AddTodo = ({ makeTodos }) => {
     setText("");
     makeTodos(text);
   };
+
+  return (
+    <div>
+      <Container maxWidth="sm">
+        <form onSubmit={createTodo}>
+          <FormControl fullWidth={true}>
+            <textField
+              label="I have to do this"
+              variant="standard"
+              onChange={handleChange}
+              required={true}
+              value={text}
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ marginTop: 5 }}
+            >
+              <Add />
+              Add
+            </Button>
+          </FormControl>
+        </form>
+      </Container>
+    </div>
+  );
 };
 
 export default AddTodo;
