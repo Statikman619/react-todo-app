@@ -8,7 +8,13 @@ const Todo = ({ todo, todoNo }) => {
         className="root"
         variant="outlined"
         style={{ marginTop: 35, background: "lightgray" }}
-      ></Card>
+      >
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            {todoNo + 1}.&nsb;{todo}
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 };

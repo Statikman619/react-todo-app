@@ -19,9 +19,7 @@ function App() {
         target="_blank"
         color="error"
         style={channelLink}
-      >
-        Max Programming
-      </Link>
+      ></Link>
       <AddTodo makeTodos={(text) => setTodos([...todos, text])} />
       {todos.map((todo, index) => {
         return <Todo todoNo={index} todo={todo} key={index} />;
