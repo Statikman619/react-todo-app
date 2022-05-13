@@ -13,7 +13,6 @@ function App() {
   };
   return (
     <div>
-      <h1>Testing</h1>
       <Link
         href="https://youtube.com/c/MaxProgramming"
         target="_blank"
