@@ -1,10 +1,10 @@
 import { render } from "react-dom";
-import { MainProvider } from "./context/MainContext";
-import { ThemeProvider } from "./context/ThemeContext";
-import { DeleteConfirmProvider } from "./context/DeleteConfirmContext";
-import { SmallTextProvider } from "./context/SmallTextContext";
+import { MainProvider } from "./Context/MainContext";
+import { ThemeProvider } from "./Context/ThemeContext";
+import { DeleteConfirmProvider } from "./Context/DeleteConfirmContext";
+import { SmallTextProvider } from "./Context/SmallTextContext";
 import App from "./App";
-import "./styles.css";
+import "./style.css";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 render(

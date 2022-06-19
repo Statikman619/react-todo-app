@@ -4,8 +4,8 @@ import {
   DeleteSweepTwoTone as DeleteSweepIcon,
   SvgIconComponent,
 } from "@material-ui/icons";
-import useChangeMenuIcon from "../../hooks/useChangeMenuIcon";
-import { MainContext } from "../../context/MainContext";
+import useChangeMenuIcon from "../../Hooks/useChangeMenuIcon";
+import { MainContext } from "../../Context/MainContext";
 import { DeleteAllConfirm } from "./DeleteConfirm";
 
 const MoreMenu = () => {

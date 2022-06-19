@@ -3,9 +3,9 @@ import { Route } from "wouter";
 import AddTodo from "./components/Todos/AddTodo";
 import PersistentDrawerLeft from "./components/PersistentDrawerLeft";
 import Todos from "./components/Todos/Todos";
-import { MainContext } from "./context/MainContext";
-import About from "./pages/About";
-import Settings from "./pages/Settings";
+import { MainContext } from "./Context/MainContext";
+import About from "./Pages/About";
+import Settings from "./Pages/Settings";
 
 function App() {
   const { addTodo } = useContext(MainContext)!;
