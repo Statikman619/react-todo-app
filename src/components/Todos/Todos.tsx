@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { MainContext } from "../../context/MainContext";
+import { MainContext } from "../../Context/MainContext";
 import { Droppable, DragDropContext, DropResult } from "react-beautiful-dnd";
 import Todo from "./Todo";
 import { Snackbar } from "@material-ui/core";

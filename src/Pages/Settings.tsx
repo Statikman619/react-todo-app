@@ -1,8 +1,8 @@
 import { Container, Switch, useMediaQuery } from "@material-ui/core";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-import { DeleteConfirmContext } from "../context/DeleteConfirmContext";
-import { SmallTextContext } from "../context/SmallTextContext";
+import { ThemeContext } from "../Context/ThemeContext";
+import { DeleteConfirmContext } from "../Context/DeleteConfirmContext";
+import { SmallTextContext } from "../Context/SmallTextContext";
 
 const Settings = () => {
   const { isDeleteConfirmation, changeDeleteConfirm } = useContext(

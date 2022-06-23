@@ -7,7 +7,7 @@ import {
   Star as StarIcon,
   SvgIconComponent,
 } from "@material-ui/icons";
-import useChangeMenuIcon from "../../hooks/useChangeMenuIcon";
+import useChangeMenuIcon from "../../Hooks/useChangeMenuIcon";
 import React, { useState } from "react";
 
 const ITEM_HEIGHT = 48;

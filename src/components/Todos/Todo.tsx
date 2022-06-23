@@ -12,11 +12,11 @@ import {
   Grid,
 } from "@material-ui/core";
 import { Draggable } from "react-beautiful-dnd";
-import { DeleteConfirmContext } from "../../context/DeleteConfirmContext";
+import { DeleteConfirmContext } from "../../Context/DeleteConfirmContext";
 import ActionsMenu from "../Actions/ActionsMenu";
-import { SmallTextContext } from "../../context/SmallTextContext";
-import { ThemeContext } from "../../context/ThemeContext";
-import { MainContext } from "../../context/MainContext";
+import { SmallTextContext } from "../../Context/SmallTextContext";
+import { ThemeContext } from "../../Context/ThemeContext";
+import { MainContext } from "../../Context/MainContext";
 
 interface Props {
   todo: TodoType;
